@@ -16,6 +16,7 @@
     "firebase": "^5.9.3",
     "react": "16.5.0",
     "react-native": "https://github.com/expo/react-native/archive/sdk-32.0.0.tar.gz",
+    "react-native-shine-button": "0.0.12",
     "react-navigation": "^3.0.9",
     "react-navigation-header-buttons": "^2.2.0",
     "uuid": "^3.3.2"

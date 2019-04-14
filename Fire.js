@@ -6,7 +6,6 @@ import uploadPhoto from './utils/uploadPhoto';
 import ApiKeys from './constants/ApiKeys';
 import * as firebase from 'firebase';
 
-// Required for side-effects
 require('firebase/firestore');
 
 const collectionName = 'snack-SJucFknGX';
@@ -17,7 +16,6 @@ class Fire {
     if (!firebase.apps.length) {firebase.initializeApp(ApiKeys.FirebaseConfig);}
     ;
     
-   // Listen for auth
     firebase.auth().onAuthStateChanged(async user => {
       if (!user) {
         await firebase.auth().signInAnonymously();
@@ -25,7 +23,6 @@ class Fire {
     });
   }
 
-  // Download Data
   getPaged = async ({ size, start }) => {
     let ref = this.collection.orderBy('timestamp', 'desc').limit(size);
     try {
@@ -39,7 +36,6 @@ class Fire {
         if (doc.exists) {
           const post = doc.data() || {};
 
-          // Reduce the name
           const user = post.user || {};
 
           const name = user.deviceName;
@@ -59,7 +55,6 @@ class Fire {
     }
   };
 
-  // Upload Data
   uploadPhotoAsync = async uri => {
     const path = `${collectionName}/${this.uid}/${uuid.v4()}.jpg`;
     return uploadPhoto(uri, path);
@@ -86,7 +81,6 @@ class Fire {
     }
   };
 
-  // Helpers
   get collection() {
     return firebase.firestore().collection(collectionName);
   }

@@ -1,6 +1,7 @@
 import { Ionicons } from '@expo/vector-icons';
 import React from 'react';
 import { Image, StyleSheet, Text, View } from 'react-native';
+import RNShineButton from 'react-native-shine-button';
 
 const profileImageSize = 36;
 const padding = 12;
@@ -69,6 +70,7 @@ const IconBar = () => (
   <View style={styles.row}>
     <View style={styles.row}>
       <Icon name="md-arrow-round-up" />
+      <RNShineButton shape={"heart"} color={"#808080"} fillColor={"#ff0000"} size={50} />
       <Icon name="md-arrow-round-down" />
       <Icon name="ios-attach" />
     </View>

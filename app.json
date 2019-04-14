@@ -19,11 +19,17 @@
     "updates": {
       "fallbackToCacheTimeout": 0
     },
+    "android": {
+      "package": "com.lakshaytyagi0001.Prayaas"
+    },
+    "ios": {
+      "bundleIdentifier": "com.lakshaytyagi0001.Prayaas"
+    },
     "assetBundlePatterns": [
       "**/*"
     ],
-    "ios": {
-      "supportsTablet": true
+    "packagerOpts": {
+      "nonPersistent": true
     }
   }
 }

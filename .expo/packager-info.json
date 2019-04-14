@@ -1,9 +1,10 @@
 {
-  "devToolsPort": 19002,
+  "devToolsPort": 19003,
   "expoServerPort": 19000,
-  "packagerPort": 19001,
-  "packagerPid": 5792,
+  "packagerPort": 19004,
+  "packagerPid": 16788,
   "expoServerNgrokUrl": "https://h7-frf.anonymous.prayaas.exp.direct",
   "packagerNgrokUrl": "https://packager.h7-frf.anonymous.prayaas.exp.direct",
-  "ngrokPid": 12260
+  "ngrokPid": 1180,
+  "webpackServerPort": null
 }
